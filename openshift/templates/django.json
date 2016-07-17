@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "django-example",
+    "name": "dj-ex",
     "annotations": {
       "description": "An example Django application with no database",
       "tags": "quickstart,python,django",
@@ -10,7 +10,7 @@
     }
   },
   "labels": {
-    "template": "django-example"
+    "template": "dj-ex"
   },
   "objects": [
     {
@@ -137,7 +137,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "django-example"
+                "dj-ex"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -163,7 +163,7 @@
           "spec": {
             "containers": [
               {
-                "name": "django-example",
+                "name": "dj-ex",
                 "image": " ",
                 "ports": [
                   {
@@ -234,7 +234,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "django-example"
+      "value": "dj-ex"
     },
     {
       "name": "NAMESPACE",
